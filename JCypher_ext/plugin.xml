@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+<extension point="org.eclipse.jdt.ui.javaCompletionProposalComputer"
+   id="jcypher_proposals"
+   name="Text Proposals">
+   <proposalCategory/>
+ </extension>
+
+ <extension
+		point="org.eclipse.jdt.ui.javaCompletionProposalComputer"
+		id="IotJCypherCompletionProposalComputer">
+		<javaCompletionProposalComputer 
+			class="iot.jcypher.eclipse.JCypherCompletionProposalComputer"
+			categoryId="JCypher_ext.jcypher_proposals"
+			activate="true">
+			<partition type="__dftl_partition_content_type"/>
+			<partition type="__java_string"/>
+		</javaCompletionProposalComputer>
+	</extension>
+	
+	<extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="iot.jcypher.eclipse.preferences.JCypherPreferencePage"
+            id="iot.jcypher.eclipse.preferences"
+            name="JCypher">
+      </page>
+   </extension>
+ 
+ <!--extension point="org.eclipse.jdt.ui.javaCompletionProposalComputer"
+   		id="JCypherCompletionProposalComputer"
+   		name="JCypher Completion Proposal Computer">
+   		<javaCompletionProposalComputer
+      		class="iot.jcypher.eclipse.JCypherCompletionProposalComputer"
+      		categoryId="org.eclipse.ui.texteditor.textual_proposals">
+      		<partition type="__java_javadoc"/>
+   		</javaCompletionProposalComputer>
+ </extension-->
+
+</plugin>

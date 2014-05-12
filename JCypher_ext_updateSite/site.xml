@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="JCypher Tools Extension for Eclipse">
+      JCypher Tools Extension for Eclipse
+   </description>
+   <feature url="features/JCypher_ext_feature_1.0.0.201405120842.jar" id="JCypher_ext_feature" version="1.0.0.201405120842">
+      <category name="tools"/>
+   </feature>
+   <category-def name="tools" label="Tools"/>
+</site>

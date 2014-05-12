@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JCypher_ext
+Bundle-SymbolicName: JCypher_ext;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: jcypher_ext.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.eclipse.ui.navigator,
+ org.eclipse.ui.navigator.resources,
+ org.eclipse.jdt.ui,
+ org.eclipse.jface.text,
+ org.eclipse.jdt.core
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-Vendor: IoT-Solutions e U
+Bundle-ActivationPolicy: lazy
