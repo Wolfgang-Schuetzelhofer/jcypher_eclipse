@@ -6,7 +6,8 @@
       provider-name="IoT-Solutions e U">
 
    <description url="http://www.example.com/description">
-      Plugin for Eclipse Java IDE, providung some Tool support for JCypher
+      Plugin for Eclipse Java IDE, providing some Tool support for
+JCypher
    </description>
 
    <copyright url="http://www.example.com/copyright">
