@@ -118,5 +118,10 @@ public class ProposalOrderConfig {
 				JCypherConstants.PROPOSAL_SEPARATOR_KEY,
 				"BR_CLOSE"
 		}));
+		this.proposalOrders.put("RETURN", new ProposalOrder(new String[] {
+				"ALL", "value", "evalPredicate", "existsPattern", "collection", "aggregate",
+				"count", "DISTINCT"
+		}));
+		this.proposalOrders.put("WITH", this.proposalOrders.get("RETURN"));
 	}
 }
