@@ -89,25 +89,19 @@ public class ProposalOrderConfig {
 		
 		this.proposalOrders.put("Relation", new ProposalOrder(new String[] {
 				"node",
-				JCypherConstants.PROPOSAL_SEPARATOR_KEY,
-				"property","type", "in", "out",
-				JCypherConstants.PROPOSAL_SEPARATOR_KEY
+				"property","type", "in", "out"
 		}));
 		this.proposalOrders.put("Node", new ProposalOrder(new String[] {
 				"relation",
-				JCypherConstants.PROPOSAL_SEPARATOR_KEY,
 				"property","label"
 		}));
 		this.proposalOrders.put("MATCH", new ProposalOrder(new String[] {
 				"node",
-				JCypherConstants.PROPOSAL_SEPARATOR_KEY,
 				"relation",
-				JCypherConstants.PROPOSAL_SEPARATOR_KEY,
 				"path", "shortestPath"
 		}));
 		this.proposalOrders.put("WHERE", new ProposalOrder(new String[] {
 				"valueOf", "existsPattern", "has", "holdsTrue",
-				JCypherConstants.PROPOSAL_SEPARATOR_KEY,
 				"NOT"
 //				JCypherConstants.PROPOSAL_SEPARATOR_KEY,
 //				"BR_OPEN"
@@ -115,7 +109,6 @@ public class ProposalOrderConfig {
 		this.proposalOrders.put("Concat", this.proposalOrders.get("WHERE"));
 		this.proposalOrders.put("Concatenator", new ProposalOrder(new String[] {
 				"AND", "OR", "XOR",
-				JCypherConstants.PROPOSAL_SEPARATOR_KEY,
 				"BR_CLOSE"
 		}));
 		this.proposalOrders.put("RETURN", new ProposalOrder(new String[] {

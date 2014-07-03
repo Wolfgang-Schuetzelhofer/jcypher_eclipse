@@ -24,7 +24,9 @@ public class JCypherPackages {
 	private static List<String> paths;
 	static {
 		paths = new ArrayList<String>();
-		paths.add(JCypherConstants.JCYPHER_ROOT_PACKAGE);
+		paths.add(JCypherConstants.JCYPHER_QUERY_API_PACKAGE);
+		paths.add(JCypherConstants.JCYPHER_VALUES_PACKAGE);
+		paths.add(JCypherConstants.JCYPHER_FACTORIES_PACKAGE);
 	}
 	
 	public static boolean addsToProposal(String path) {

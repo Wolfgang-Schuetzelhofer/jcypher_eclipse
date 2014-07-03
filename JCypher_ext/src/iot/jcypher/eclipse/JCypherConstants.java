@@ -18,7 +18,9 @@ package iot.jcypher.eclipse;
 
 public class JCypherConstants {
 
-	public static final String JCYPHER_ROOT_PACKAGE = "iot.jcypher";
+	public static final String JCYPHER_QUERY_API_PACKAGE = "iot.jcypher.query.api";
+	public static final String JCYPHER_VALUES_PACKAGE = "iot.jcypher.query.values";
+	public static final String JCYPHER_FACTORIES_PACKAGE = "iot.jcypher.query.factories";
 	public static final int DEFAULT_RELEVANCE = 930;
 	public static final String PROPOSAL_SEPARATOR_KEY = "---";
 	
